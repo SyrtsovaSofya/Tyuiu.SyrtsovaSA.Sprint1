@@ -5,6 +5,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task0.V11.Test
     [TestClass]
     public class DataServiceTest
     {
+
         [TestMethod]
         public void ValidExpression()
         {
