@@ -6,7 +6,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task2.V15.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidExpression()
         {
             DataService dataService = new DataService();
             int a = 3;
