@@ -7,7 +7,6 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task0.V11
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.Title = "Спринт #1 | Выполнила: Сырцова С. А. | ИИПб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
@@ -27,9 +26,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task0.V11
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
             Console.WriteLine(ds.Calculate());
-
             Console.ReadKey();
         }
     }

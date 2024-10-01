@@ -7,7 +7,6 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task6.V5
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.Title = "Спринт #1 | Выполнила: Сырцова С. А. | ИИПб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
@@ -24,17 +23,13 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task6.V5
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string text;
-
             Console.WriteLine("Введите текст.");
-            text = Console.ReadLine();
+            string text = Console.ReadLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
             Console.WriteLine(ds.CheckSymmetricalWords(text));
-
             Console.ReadLine();
         }
     }

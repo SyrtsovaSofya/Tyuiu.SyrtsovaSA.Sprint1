@@ -7,7 +7,6 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task2.V15
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.Title = "Спринт #1 | Выполнила: Сырцова С. А. | ИИПб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
@@ -24,17 +23,13 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task2.V15
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x;
-
             Console.WriteLine("Введите значение X:");
-            x = Convert.ToInt32(Console.ReadLine());
+            int x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
             Console.WriteLine("Куб числа Х = " + ds.CalculateCubeVolume(x));
-
             Console.ReadLine();
         }
     }

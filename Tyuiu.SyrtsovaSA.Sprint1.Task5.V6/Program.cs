@@ -7,7 +7,6 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task5.V6
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.Title = "Спринт #1 | Выполнила: Сырцова С. А. | ИИПб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
@@ -24,17 +23,13 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task5.V6
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int day;
-
             Console.WriteLine("Введите целое число от 1 до 365.");
-            day = Convert.ToInt32(Console.ReadLine());
+            int day = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
             Console.WriteLine(ds.Calculate(day));
-
             Console.ReadLine();
         }
     }

@@ -7,7 +7,6 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task4.V30
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             Console.Title = "Спринт #1 | Выполнила: Сырцова С. А. | ИИПб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
@@ -24,21 +23,16 @@ namespace Tyuiu.SyrtsovaSA.Sprint1.Task4.V30
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
 
             Console.WriteLine("Введите значение X:");
-            x = Convert.ToInt32(Console.ReadLine());
-            
+            double x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите значение Y:");
-            y = Convert.ToInt32(Console.ReadLine());
-
+            double y = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
             Console.WriteLine(ds.Calculate(x, y));
-
             Console.ReadLine();
         }
     }
